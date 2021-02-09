@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global style */
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Container Style */
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Card Style */
+.card{
+    min-height: 90vh;
+    width: 30rem;
+    border-radius: 30px;
+    padding: 0 5rem;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5), 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+/* Top of the card Style */
+.top{
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 0;
+}
+.top img{
+    width: 17rem;
+    z-index: 2;
+}
+.top .circle{
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right bottom,
+        #30475e,
+        #f05454
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* Information of the card Style */
+.info h1{
+    font-size: 2.3rem;
+    padding: 1rem 0 1.5rem;
+}
+.info h3{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: #585858;
+}
+/* Button Style */
+.approve{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0 0;
+}
+.approve button {
+    width: 45%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    font-weight: bolder;
+    padding: 0.5rem;
+}
+button.agree {
+    background: #16c79a;
+}
+button.disagree {
+    background: #ff4646;
+}
