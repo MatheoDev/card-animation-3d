@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    perspective: 500px;
 }
 /* Container Style */
 .container{
@@ -20,7 +21,8 @@ body{
 }
 /* Card Style */
 .card{
-    min-height: 90vh;
+    transform-style: preserve-3d;
+    min-height: 80vh;
     width: 30rem;
     border-radius: 30px;
     padding: 0 5rem;
@@ -35,10 +37,12 @@ body{
     padding: 2rem 0 0;
 }
 .top img{
+    transition: all 0.5s ease;
     width: 17rem;
     z-index: 2;
 }
 .top .circle{
+    transition: all 0.5s ease;
     width: 15rem;
     height: 15rem;
     background: linear-gradient(
@@ -52,16 +56,19 @@ body{
 }
 /* Information of the card Style */
 .info h1{
+    transition: all 0.5s ease;
     font-size: 2.3rem;
     padding: 1rem 0 1.5rem;
 }
 .info h3{
+    transition: all 0.5s ease;
     font-size: 1.3rem;
     font-weight: lighter;
     color: #585858;
 }
 /* Button Style */
 .approve{
+    transition: all 0.5s ease;
     display: flex;
     justify-content: space-around;
     padding: 1.5rem 0 0;
